@@ -1,2 +1,2 @@
 # RL
-Reinforcement learning
+Reinforcement Learning
