@@ -46,7 +46,7 @@ class ReinforceAgent:
         action_prob = K.sum(action * self.model.output, axis=1)
         cross_entropy = K.log(action_prob) * discounted_rewards
         loss = -K.sum(cross_entropy)
-        
+
         # 정책신경망을 업데이트하는 훈련함수 생성
         optimizer = Adam(lr=self.learning_rate)
         #updates = optimizer.get_updates(self.model.trainable_weights,[],loss)

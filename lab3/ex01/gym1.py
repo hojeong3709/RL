@@ -15,12 +15,13 @@ if __name__ == "__main__":
     num_episodes = 2000
 
     reward_list = []
-    current_state = env.reset()
+
 
     for i in range(num_episodes):
         reward_total_sum = 0
         done = False
         j = 0
+        current_state = env.reset()
         while j < 99:
             j += 1
             action = np.argmax(q_table[current_state, :] + np.random.randn(1, env.action_space.n) * (1./(i + 1)))
