@@ -1,2 +1,2 @@
-# RL
+# Open-AI-Gym
 Reinforcement Learning
